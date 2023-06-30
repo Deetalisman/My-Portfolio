@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+  
+}
+.home{
+   width: 100%;
+    height: 100vh;
+   /* background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:  center;*/
+}
+.header{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    height: 50px;
+    margin-top: 1%;
+}
+.imgh h1{
+    margin-top: 20px;
+}
+.imgh h1 span{
+    color: tomato;
+}
+.hamburger{
+    display: none;
+}
+.header ul{
+    display: flex;
+}
+.header ul li{
+    margin: 6% 20px;
+    list-style-type: none;
+}
+.header ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.header ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background:crimson;
+    left: 0;
+    bottom: -9px;
+    position: absolute;
+}
+.header ul li a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.home2{
+    width: 80%;
+    margin: 300px 10% 0;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+}
+.home2 p{
+    font-size: 20px;
+}
+.home2 h1{
+    font-size: 40px;
+    line-height: 60px;
+}
+.home2 h1 span{
+    color:crimson;
+}
+.about{
+    width: 60%;
+    margin: 0 20% ;
+    display: flex;
+   margin-top: 5%;
+}
+.aboutleft img{
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    display: none;
+}
+.aboutright{
+    margin-top: 20px;
+}
+.aboutright h1{
+    font-size: 40px;
+    text-align: center;
+}
+.aboutright p{
+    margin-top: 15px;
+    line-height: 25px;
+}
+#tabbed{
+    margin-top: 20px;
+}
+.tab{
+    display: flex;
+}
+.tab li{
+    list-style-type: none;
+    margin-right: 50px;
+    cursor: pointer;
+    position: relative;
+}
+.tab li::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background:crimson;
+    left: 0;
+    bottom: -9px;
+    position: absolute;
+}
+.tab li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.tabact{
+    color: tomato;
+}
+.now{
+    display: block;
+}
+.see{
+    display: none;
+    transition: 0.5s ease;
+}
+#less{
+    display: none;
+}
+.panel{
+    margin-top: 20px;
+    display: none;
+    line-height: 0;
+}
+.panel.active{
+    display: block;
+}
+.active::after{
+    width: 100%;
+}
+.panelli{
+    margin-top: 0px;
+    line-height: 0;
+}
+.panelp{
+    color: crimson;
+    margin-top: 0;
+}
+.service{
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 5%;
+}
+.service h1{
+    font-size: 40px;
+    text-align: center;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+.ones{
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    background-color: rgb(31, 30, 30);
+    margin-top: 5%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.ones:hover{
+    background-color: crimson;
+    transform: translateY(-10px);
+}
+.ones img{
+    height: 40px;
+    width: 50px;
+}
+.ones h2{
+    margin-top: 20px;
+}
+.ones p{
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.ones p a{
+    text-decoration: none;
+    color: white;
+}
+.work{
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.work h1{
+    font-size: 40px;
+}
+.workp{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.workpic{
+    position: relative;
+    transition: 0.5s;
+    width: 45%;
+     margin-top: 20px;
+}
+.workpic img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.workpic1{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+    border-radius: 10px;
+    margin-bottom: 3px;
+
+}
+.fa-brands{
+    color: white;
+}
+.workpic1 p{
+    margin-top: 15px;
+    font-size: 13px;
+    width: 70%;
+}
+.workpic:hover .workpic1{
+   height: 100%;
+}
+#live{
+    margin-top: 10px;
+    color: white;
+}
+.work button{
+    width: 15%;
+    padding: 10px 0;
+    text-align: center;
+    margin: 30px  44%;
+    background-color: black;
+    color: white;
+    border: 1px solid #ff004f ;
+    cursor: pointer;
+}
+.foot{
+    width: 80%;
+    margin: 5% 10%;
+}
+.icons{
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.icons p{
+    cursor: pointer;
+}
+.footleft{
+    line-height: 30px;
+}
+.footleft h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.footleft p{
+    margin-top: 10px;
+    color: gray;
+}
+.footleft img{
+    height: 35px;
+    margin-top: 10px;
+}
+.footleft p a{
+    text-decoration: none;
+    color: gray;
+
+}
+#cv{
+    padding: 10px 35px;
+    background-color: #ff004f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 35px;
+    text-decoration: none;
+}
+form{
+    margin-left:15% ;
+    display: none;
+}
+#name{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(31, 30, 30);
+    border: none;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+#message{
+    width: 500px;
+    height: 135px;
+    background-color: rgb(31, 30, 30);
+    border: none;
+    padding-left: 10px;
+    padding-top: 0;
+    border-radius: 10px;
+
+}
+form button{
+    padding: 10px 35px;
+    background-color: #ff004f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.feet{
+    background-color: rgb(31, 30, 30);
+    text-align: center;
+    padding: 10px 0;
+}
+.aboutleft img{
+    display: none;
+}
+@media screen and (max-width:700px) {
+    body{
+        width: 100%;
+    }
+    .home{
+        width: 100%;
+        margin: 0;
+    }
+    .header{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .imgh img{
+        height: 60px;
+    }
+    .hamburger{
+         display: none;
+         margin-top: 12px;
+         cursor: pointer;
+    }
+    .hamburger span{
+        background-color: #ff004f;
+        width:39px;
+        height: 5px;
+        margin: 7px 0;
+        display: block;
+        border-radius:20px ;
+    }
+    .imgh{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 5%;
+    }
+    #navlist{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 12px;
+        font-size: 18px;
+    }
+    .header ul li{
+        margin: 20% 15px;
+    }
+    .show{
+        display: block;
+    }
+    .home2{
+        width: 80%;
+        margin: 280px 10%;
+    }
+    .about{
+        width: 90%;
+        margin: 5% 5%;
+        display: block;
+        margin-bottom: 10%;
+    }
+    .aboutright h1{
+        text-align: center;
+    }
+    .aboutleft img{
+        width: 80%;
+        height: 400px;
+        margin: 0 10%;
+    }
+    .service{
+        width: 80%;
+        margin: 5% 10%;
+        text-align: center;
+    }
+    .services{
+        display: block;
+    }
+    .ones{
+        width: 100%;
+        padding-top: 40px;
+    }
+    .work{
+        width: 90%;
+        margin: 5% 5%;
+        text-align: center;
+    }
+    .workp{
+        display: block;
+    }
+    .workpic{
+        width: 100%;
+        margin-top: 20px;
+        height: 300px;
+    }
+    .workpic img{
+        width: 100%;
+        height: 300px;
+    }
+    .workpic1{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .workpic:hover .workpic1{
+        height: 300px;
+     }
+    .work button{
+        width: 150px;
+        margin: 30px 30%;
+    }
+    .foot{
+         width: 100%;
+        margin: 20px 0;
+        display: block;
+    }
+    .footleft{
+        text-align: center;
+    }
+    .icons{
+        text-align: center;
+        margin: 20px auto;
+    }
+    form{
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    #name{
+        width: 300px;
+    }
+    #message{
+        width: 300px;
+        
+    } 
+}
+@media screen and (max-width:590px) {
+    .home2 h1{
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+
+
