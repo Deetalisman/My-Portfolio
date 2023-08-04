@@ -161,6 +161,7 @@ body {
 .service h1 {
   font-size: 40px;
   text-align: center;
+  color: grey;
 }
 .services {
   display: flex;
@@ -210,6 +211,7 @@ body {
 }
 .work h1 {
   font-size: 40px;
+  color: grey;
 }
 .workp {
   margin-top: 40px;
@@ -263,6 +265,25 @@ body {
   color: white;
   border-radius: 10px;
 }
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.7rem;
+  width: 300px;
+  margin: 2rem 35%;
+  border: 1px solid white;
+  padding: 0.5rem 2rem;
+}
+.proj {
+  background-color: crimson;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.re,
+.va {
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+}
 #live {
   margin-top: 10px;
   color: white;
@@ -276,6 +297,9 @@ body {
   color: white;
   border: 1px solid #ff004f;
   cursor: pointer;
+}
+.REACT {
+  display: none;
 }
 .foot {
   width: 80%;
@@ -312,7 +336,7 @@ body {
   color: gray;
 }
 .title {
-  color: crimson;
+  color: grey;
 }
 #cv {
   padding: 10px 35px;
@@ -484,6 +508,10 @@ form button {
     text-align: center;
     margin: 20px auto;
   }
+  .project {
+    width: 300px;
+    margin: 2rem 25%;
+  }
   form {
     margin-top: 20px;
     text-align: center;
@@ -500,5 +528,10 @@ form button {
   .home2 h1 {
     font-size: 25px;
     line-height: 40px;
+  }
+  .project {
+    width: 240px;
+    margin: 2rem auto;
+    padding: 0.5rem 1.2rem;
   }
 }

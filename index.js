@@ -63,3 +63,21 @@ less.addEventListener("click", function (e) {
   more.style.display = "block";
   less.style.display = "none";
 });
+//------------React and vanilla--------------//
+
+const vanilla = document.querySelector(".va");
+const react = document.querySelector(".re");
+const reactProj = document.querySelector(".REACT");
+const vanillaProj = document.querySelector(".VANILLA");
+react.addEventListener("click", () => {
+  react.classList.add("proj");
+  vanilla.classList.remove("proj");
+  reactProj.style.display = "flex";
+  vanillaProj.style.display = "none";
+});
+vanilla.addEventListener("click", () => {
+  react.classList.remove("proj");
+  vanilla.classList.add("proj");
+  reactProj.style.display = "none";
+  vanillaProj.style.display = "flex";
+});
