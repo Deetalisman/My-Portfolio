@@ -21,6 +21,11 @@ ham.addEventListener("click", () => {
   ham.style.display = "none";
   close.style.display = "block";
 });
+function closes() {
+  nav.style.display = "none";
+  close.style.display = "none";
+  ham.style.display = "block";
+}
 close.addEventListener("click", () => {
   nav.style.display = "none";
   close.style.display = "none";
