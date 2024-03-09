@@ -464,7 +464,7 @@ form button {
   }
   .close {
     z-index: 100;
-    color: rgb(41, 40, 62);
+    color: rgb(255, 112, 91);
   }
   .hamburger span {
     background-color: rgb(255, 112, 91);
@@ -476,7 +476,7 @@ form button {
     z-index: 100;
   }
   .header ul li a:hover {
-    color: rgb(41, 40, 62);
+    color: rgb(255, 112, 91);
   }
   .header ul li a::after {
     background-color: rgb(41, 40, 62);
@@ -497,14 +497,15 @@ form button {
     right: 0;
     top: 0px;
     font-size: 18px;
-    background-color: rgb(255, 112, 91);
+    /* background-color: rgb(255, 112, 91); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #e86f95);
     width: 40%;
     height: 100vh;
     padding-left: 2rem;
     padding-top: 4rem;
   }
   .header ul li {
-    margin: 20% 15px;
+    margin: 40% 15px;
   }
   .showme {
     display: block;
